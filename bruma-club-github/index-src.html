@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>BRUMA CLUB — for those who know</title>
+  <meta name="description" content="BRUMA CLUB. Limited, numbered drops from Lima, Peru. 100 pieces. Each one numbered. When it's gone, it's gone. Drop 001 reveals July 18." />
+  <!-- Open Graph — export og-image.png at 1200×630 (BC monogram on carbon,
+       "for those who know" beneath) so WhatsApp/Instagram previews look right -->
+  <meta property="og:title" content="BRUMA CLUB — for those who know" />
+  <meta property="og:description" content="Limited, numbered drops. 100 pieces, each one numbered. Drop 001 reveals July 18." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BRUMA CLUB" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BRUMA CLUB — for those who know" />
+  <meta name="twitter:description" content="Limited, numbered drops from Lima, Peru. Drop 001 reveals July 18." />
+  <meta name="twitter:image" content="assets/og-image.jpg" />
+  <meta name="theme-color" content="#22252A" />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="icon" type="image/png" href="assets/logo-bc-crema.png" />
+  <link rel="apple-touch-icon" href="assets/logo-bc-crema.png" />
+
+  <!-- Fonts: Playfair Display (display serif) + Jost (light sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- scroll progress hairline -->
+  <div id="progress" aria-hidden="true"></div>
+  <!-- subtle desktop cursor ring (pointer:fine only) -->
+  <div id="cursor" aria-hidden="true"></div>
+
+  <!-- ============ ENTRY GATE ============ -->
+  <div id="gate" aria-hidden="true">
+    <img class="gate-logo" src="assets/logo-bc-crema.png" alt="BC — Bruma Club" />
+    <p class="gate-tagline">for those who know</p>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <nav id="nav" aria-label="Main">
+    <a href="#hero" class="nav-brand"><img src="assets/logo-bc-crema.png" alt="Bruma Club" /></a>
+    <div class="nav-links">
+      <a href="#club">The Club</a>
+      <a href="#drop">Drop 001</a>
+      <a href="#membership">Membership</a>
+    </div>
+    <a href="#drop" class="nav-cta" data-open-checkout>Reserve</a>
+  </nav>
+
+  <!-- ============ 1 · HERO ============ -->
+  <header id="hero" class="dark">
+    <p class="eyebrow reveal">Drop 001 · Lima, Peru</p>
+    <div class="hero-logo-wrap" data-parallax="0.1">
+      <img class="hero-logo" src="assets/logo-bc-crema.png" alt="BC monogram — Bruma Club" />
+    </div>
+    <p class="hero-tagline reveal">for those who know</p>
+
+    <div class="garua reveal"><span></span><span></span></div>
+
+    <div id="countdown" class="reveal" aria-live="polite">
+      <div class="cd-unit"><span class="cd-num" id="cd-days">00</span><span class="cd-label">Days</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-unit"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">Hours</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-unit"><span class="cd-num" id="cd-mins">00</span><span class="cd-label">Minutes</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-unit"><span class="cd-num" id="cd-secs">00</span><span class="cd-label">Seconds</span></div>
+    </div>
+    <p class="cd-caption reveal" id="cd-caption">The reveal drops July 18.</p>
+    <!-- Shown only to early-access members inside their window (script.js) -->
+    <p class="early-note" id="early-note" hidden></p>
+
+    <div class="hero-actions reveal">
+      <a href="#drop" class="btn btn-solid" data-open-checkout>Reserve your piece</a>
+      <a href="#membership" class="btn btn-ghost">Enter the club</a>
+    </div>
+  </header>
+
+  <!-- ============ 2 · PHILOSOPHY — manifesto sequence ============ -->
+  <!-- Each "beat" pins one idea full-screen while you scroll past it.   -->
+  <!-- Words fade in one by one; a slow garúa (mist) drifts behind.      -->
+  <section id="philosophy" class="black" aria-label="Manifesto">
+    <div class="mist" aria-hidden="true"></div>
+
+    <div class="beat"><div class="beat-inner">
+      <h2 class="statement">True luxury <em>doesn't shout.</em></h2>
+    </div></div>
+
+    <div class="beat"><div class="beat-inner">
+      <h2 class="statement">It whispers — <em>for those who know.</em></h2>
+    </div></div>
+
+    <div class="beat"><div class="beat-inner">
+      <h2 class="statement">We don't make collections.<br />We make <em>editions.</em></h2>
+    </div></div>
+
+    <div class="beat"><div class="beat-inner">
+      <h2 class="statement">Twenty-five of each.<br /><em>Numbered. Never again.</em></h2>
+    </div></div>
+
+    <div class="beat"><div class="beat-inner">
+      <h2 class="statement">Made in Lima, from Peruvian pima —<br /><em>the rarest cotton on earth.</em></h2>
+    </div></div>
+
+    <div class="beat"><div class="beat-inner">
+      <h2 class="statement">This isn't a store.<br /><em>It's a club.</em></h2>
+    </div></div>
+  </section>
+
+  <!-- ============ 3 · WHAT IS BRUMA CLUB ============ -->
+  <section id="club" class="light">
+    <p class="eyebrow reveal">The Club</p>
+    <h2 class="title reveal">This is not a store.</h2>
+    <div class="garua reveal"><span></span><span></span></div>
+    <div class="prose" data-stagger>
+      <p>BRUMA CLUB is a private circle, born in the mist of Lima.</p>
+      <p>We release limited, numbered drops. Nothing is restocked. Nothing is repeated.</p>
+      <p>When an edition sells out, it is gone — and so is your chance.</p>
+      <p>Those who own a piece, belong.</p>
+    </div>
+  </section>
+
+  <!-- ============ 4 · HOW IT WORKS ============ -->
+  <section id="how" class="dark after-light">
+    <p class="eyebrow reveal">The Model</p>
+    <h2 class="title reveal">How it works.</h2>
+    <div class="garua reveal"><span></span><span></span></div>
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step-num">01</span>
+        <h3>A drop is announced.</h3>
+        <p>Limited and numbered. Never more than the edition allows.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">02</span>
+        <h3>You secure your piece.</h3>
+        <p>No account needed. A name, an email — that's all.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">03</span>
+        <h3>You receive your number.</h3>
+        <p>Unique, in a box with its edition passport.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">04</span>
+        <h3>When it's gone, it's gone.</h3>
+        <p>You belong.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ 5 · VALUES ============ -->
+  <section id="values" class="light">
+    <div class="values-grid">
+      <div class="value reveal">
+        <span class="roman">I</span>
+        <h3>Quality</h3>
+        <div class="garua sm"><span></span><span></span></div>
+        <p>Peruvian pima, cut and finished without compromise.</p>
+      </div>
+      <div class="value reveal">
+        <span class="roman">II</span>
+        <h3>Exclusivity</h3>
+        <div class="garua sm"><span></span><span></span></div>
+        <p>Editions of 25. Numbered once. Never reissued.</p>
+      </div>
+      <div class="value reveal">
+        <span class="roman">III</span>
+        <h3>Timelessness</h3>
+        <div class="garua sm"><span></span><span></span></div>
+        <p>No logos that shout. No seasons that expire.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5b · OUR STORY / WHY BRUMA ============ -->
+  <section id="story" class="dark after-light">
+    <p class="eyebrow reveal">Our Story</p>
+    <h2 class="title reveal">Why Bruma.</h2>
+    <div class="garua reveal"><span></span><span></span></div>
+    <div class="prose" data-stagger>
+      <p>Bruma is the mist that settles over Lima — the garúa. It doesn't announce itself. It simply arrives, and the city knows.</p>
+      <p>We grew up under that mist, beside the finest cotton on earth. Peruvian pima has dressed quiet wealth for generations — it just rarely carried a Peruvian name.</p>
+      <p>So we built a club, not a brand. Small editions, numbered by hand, cut in Lima ateliers that already sew for houses you'd recognize.</p>
+      <p class="prose-accent">We don't say much. Neither will you. The piece speaks at the right volume.</p>
+    </div>
+
+    <!-- quiet trust seals -->
+    <ul class="trust reveal" aria-label="Trust">
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.4-6.5-10A6.5 6.5 0 0 1 12 4.5 6.5 6.5 0 0 1 18.5 11c0 4.6-6.5 10-6.5 10z"/><circle cx="12" cy="11" r="2.2"/></svg>
+        Made in Peru
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20c6-2 8-7 8-13-6 0-11 2-13 8m5 5c-3-1-5-3-5-3"/><path d="M12 20c0-5 2-9 6-12"/></svg>
+        Peruvian pima cotton
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L7 20M17 4l-2 16M5 9h15M4 15h15"/></svg>
+        Limited &amp; numbered
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5.5" y="10.5" width="13" height="9" rx="1.5"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>
+        Secure checkout
+      </li>
+    </ul>
+
+  </section>
+
+  <!-- ============ 5c · THE PROOF (trust without spoiling the design) ============ -->
+  <section id="proof" class="light">
+    <p class="eyebrow reveal">The Proof</p>
+    <h2 class="title reveal">The first edition.<br />In the mist.</h2>
+    <div class="garua reveal"><span></span><span></span></div>
+    <p class="drop-intro reveal">The silhouettes, the tones, the atmosphere. An intimate first look at Drop 001.</p>
+
+    <!-- Editorial close crops produced from the original provided photographs -->
+    <div class="proof-grid">
+      <figure class="proof-shot reveal">
+        <img class="proof-image" src="assets/editorial-birch.webp" alt="Birch Cream — detail of the crewneck worn in mist" loading="lazy" decoding="async" />
+        <figcaption>Birch Cream · detail</figcaption>
+      </figure>
+      <figure class="proof-shot reveal">
+        <img class="proof-image" src="assets/editorial-camel.webp" alt="Camel — crewneck and drape in mist" loading="lazy" decoding="async" />
+        <figcaption>Camel · silhouette</figcaption>
+      </figure>
+      <figure class="proof-shot reveal">
+        <img class="proof-image" src="assets/editorial-navy.webp" alt="Navy — crewneck editorial crop" loading="lazy" decoding="async" />
+        <figcaption>Navy · tone</figcaption>
+      </figure>
+    </div>
+
+    <!-- Made in Peru -->
+    <div class="made reveal">
+      <h3 class="made-title">Made in Peru.</h3>
+      <p>Pima grows in a handful of valleys on earth, and the finest of it grows here. Long-staple, hand-picked, spun and sewn in Lima ateliers that already dress houses you'd recognize. A local luxury that can't be copied abroad — only worn.</p>
+      <p class="made-seal">Crafted in Lima · Peruvian pima</p>
+    </div>
+
+    <!-- Who's behind -->
+    <div class="founder reveal">
+      <div class="founder-ph founder-mark"><img src="assets/logo-bc-carbon.png" alt="BRUMA CLUB monogram" loading="lazy" decoding="async" /></div>
+      <div class="founder-text">
+        <p class="founder-line">“We built the club we wanted to belong to.”</p>
+        <p class="founder-name">— The founder, Lima</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 · THE MATERIAL ============ -->
+  <section id="material" class="dark after-light">
+    <p class="eyebrow reveal">The Material</p>
+    <h2 class="title reveal">Quiet, down to the thread.</h2>
+    <div class="garua reveal"><span></span><span></span></div>
+    <div class="material-grid">
+      <div class="prose reveal">
+        <p>Peruvian pima cotton — among the finest fibers on earth — blended with modal for a drape that falls, never clings.</p>
+        <p>Seams pressed flat. Collars that hold their line for years.</p>
+        <p>And on every piece, a leather patch — embossed with your number.</p>
+        <p class="prose-accent">You will know. No one else has to.</p>
+      </div>
+      <div class="material-images" data-parallax="0.07">
+        <img class="material-image reveal" src="assets/detail-knit.webp" alt="Detalle de la caída del crewneck Birch Cream" loading="lazy" decoding="async" />
+        <img class="material-image reveal" src="assets/detail-carbon.webp" alt="Detalle de la prenda Carbon" loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7 · DROP 001 — PRE-SALE ============ -->
+  <section id="drop" class="light">
+    <p class="eyebrow reveal">Drop 001 · The Crewneck</p>
+    <h2 class="title reveal" id="drop-title">Reserved before it's seen.</h2>
+    <div class="garua reveal"><span></span><span></span></div>
+    <p class="drop-intro reveal" id="drop-intro">
+      100 pieces. Each one numbered.<br />The reveal drops July 18.
+    </p>
+    <!-- Sober price line — filled (or hidden) by script.js from CONFIG.PRICE -->
+    <p class="drop-price reveal" id="drop-price" hidden></p>
+
+    <!-- Cards rendered by script.js from CONFIG.COLORS -->
+    <div id="drop-grid" class="drop-grid">
+      <!-- Fallback edition cards: replaced with interactive cards when JS loads. -->
+      <article class="drop-card"><div class="card-visual"><img src="assets/crewneck-camel.webp" alt="Crewneck Camel" loading="lazy" width="1122" height="1402" /></div><h3 class="card-name">Camel</h3><p class="card-edition">Edition of 25</p><p class="card-meta">Pantone 16-1320 · Peruvian pima</p><p class="card-stock">Available in the collection</p><a class="btn btn-solid" href="#membership">Discover the club</a></article>
+      <article class="drop-card"><div class="card-visual"><img src="assets/crewneck-birch.webp" alt="Crewneck Birch Cream" loading="lazy" width="1122" height="1402" /></div><h3 class="card-name">Birch Cream</h3><p class="card-edition">Edition of 25</p><p class="card-meta">Pantone 13-0905 · Peruvian pima</p><p class="card-stock">Available in the collection</p><a class="btn btn-solid" href="#membership">Discover the club</a></article>
+      <article class="drop-card"><div class="card-visual"><img src="assets/crewneck-navy.webp" alt="Crewneck Navy" loading="lazy" width="1122" height="1402" /></div><h3 class="card-name">Navy</h3><p class="card-edition">Edition of 25</p><p class="card-meta">Pantone 19-3933 · Peruvian pima</p><p class="card-stock">Available in the collection</p><a class="btn btn-solid" href="#membership">Discover the club</a></article>
+      <article class="drop-card"><div class="card-visual"><img src="assets/crewneck-carbon.webp" alt="Crewneck Carbon" loading="lazy" width="1122" height="1402" /></div><h3 class="card-name">Carbon</h3><p class="card-edition">Edition of 25</p><p class="card-meta">Pantone 19-4007 · Peruvian pima</p><p class="card-stock">Available in the collection</p><a class="btn btn-solid" href="#membership">Discover the club</a></article>
+    </div>
+
+    <div class="site-warning" role="status">La visualización interactiva requiere JavaScript. Las fotografías se muestran igualmente. Si esta pantalla aparece en una vista previa de archivos, abre el archivo HTML completo en un navegador.</div>
+    <p class="drop-note reveal">Guest checkout. No account required. Numbers assigned in order of reservation.</p>
+    <p class="drop-aux reveal">
+      Ships from Lima · Peru nationwide — international waitlist
+      <span class="dot">·</span>
+      <button type="button" class="link-quiet" data-open-sizeguide>Size guide</button>
+      <span class="dot">·</span>
+      <a class="link-quiet wa-link" target="_blank" rel="noopener">Questions? WhatsApp us</a>
+    </p>
+  </section>
+
+  <!-- ============ EDITORIAL LOOKBOOK: original photographs ============ -->
+  <section id="lookbook" class="black lookbook" aria-label="Drop 001 editorial lookbook">
+    <p class="eyebrow reveal">The Editorial · Drop 001</p>
+    <h2 class="title reveal">Four tones.<br /><em>One attitude.</em></h2>
+    <div class="garua reveal"><span></span><span></span></div>
+    <p class="lookbook-lead reveal">Lima, seen through the mist.</p>
+    <div class="lookbook-grid">
+      <figure class="lookbook-item reveal"><img src="assets/crewneck-birch.webp" alt="Birch Cream — model wearing the BRUMA CLUB crewneck in fog" loading="lazy" decoding="async" /><figcaption><span>01</span> Birch Cream</figcaption></figure>
+      <figure class="lookbook-item reveal"><img src="assets/crewneck-camel.webp" alt="Camel — model wearing the BRUMA CLUB crewneck in fog" loading="lazy" decoding="async" /><figcaption><span>02</span> Camel</figcaption></figure>
+      <figure class="lookbook-item reveal"><img src="assets/crewneck-navy.webp" alt="Navy — model wearing the BRUMA CLUB crewneck in fog" loading="lazy" decoding="async" /><figcaption><span>03</span> Navy</figcaption></figure>
+      <figure class="lookbook-item reveal"><img src="assets/crewneck-carbon.webp" alt="Carbon — model wearing the BRUMA CLUB crewneck in fog" loading="lazy" decoding="async" /><figcaption><span>04</span> Carbon</figcaption></figure>
+    </div>
+    <p class="lookbook-footer reveal">The limited edition. Nothing loud, nothing extra.</p>
+  </section>
+
+  <!-- ============ 8 · MEMBERSHIP ============ -->
+  <section id="membership" class="dark">
+    <p class="eyebrow reveal">The Bruma Club Membership</p>
+    <h2 class="title reveal">Owning a piece<br />makes you a member.</h2>
+    <div class="garua reveal"><span></span><span></span></div>
+
+    <div class="membership-grid">
+      <!-- CSS-only Club Passport -->
+      <div class="passport-wrap reveal">
+        <div class="passport" id="passport">
+          <div class="passport-top">
+            <span class="passport-monogram">B<i>C</i></span>
+            <span class="passport-club">BRUMA CLUB</span>
+          </div>
+          <div class="passport-mid">
+            <span class="passport-line"></span>
+            <span class="passport-tagline">for those who know</span>
+            <span class="passport-line"></span>
+          </div>
+          <div class="passport-bottom">
+            <span>MEMBER 001</span>
+            <span class="dot">·</span>
+            <span>EDITION 01/25</span>
+          </div>
+        </div>
+        <p class="passport-caption">The Club Passport · Drop 001</p>
+      </div>
+
+      <div class="membership-text reveal">
+        <div class="prose">
+          <p>Every Drop 001 crewneck arrives with a numbered Club Passport, your personal Member No., and an Edition Card — sealed in a soft-touch black box.</p>
+          <p>Membership is for life. Once you're in, you keep priority access to every future drop before it opens to the public.</p>
+          <p class="prose-accent">Numbers are never reissued.</p>
+        </div>
+
+        <ul class="benefits" data-stagger>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M12 3l2.4 6.6H21l-5.4 4 2 6.4-5.6-4-5.6 4 2-6.4-5.4-4h6.6z"/></svg>
+            A numbered edition piece — 1 of 25
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="1.5"/><path d="M4 10h16"/></svg>
+            A physical Club Passport + Edition Card
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M10 15V9.2L9 10m4.6 5c1.6-1.7 2.4-3 2.4-4.2 0-1-.7-1.8-1.7-1.8s-1.7.8-1.7 1.8"/></svg>
+            Your unique Member No.
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+            Early access to every future drop
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M12 4.5c-4 0-7 3-7 6.8 0 4.6 4.2 7 7 8.2 2.8-1.2 7-3.6 7-8.2 0-3.8-3-6.8-7-6.8z"/></svg>
+            Lifetime membership — once in, always in
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8b · FAQ ============ -->
+  <section id="faq" class="dark">
+    <p class="eyebrow reveal">Questions</p>
+    <h2 class="title reveal">Before you ask.</h2>
+    <div class="garua reveal"><span></span><span></span></div>
+
+    <div class="faq-list reveal">
+      <details class="faq">
+        <summary>How does the drop work?<span class="faq-x" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>100 pieces. Four colors, editions of 25, each piece numbered in order of reservation. The first edition was revealed July 18, 2026. When a color sells out, it is never reissued.</p></div>
+      </details>
+      <details class="faq">
+        <summary>When does it ship?<span class="faq-x" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Orders are dispatched from Lima. Delivery options and estimates will be confirmed when live checkout is enabled; join the list for international shipping news.</p></div>
+      </details>
+      <details class="faq">
+        <summary>What's the fabric?<span class="faq-x" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Peruvian pima cotton blended with modal — heavyweight, matte, with a drape that falls rather than clings. Flat-pressed seams, a collar that holds its line, and a leather patch embossed with your number.</p></div>
+      </details>
+      <details class="faq">
+        <summary>Can I return or exchange it?<span class="faq-x" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Size exchanges are accepted within 7 days of delivery, unworn, with the box and passport intact. Numbered editions are not refundable — your number is yours alone. Full details under Shipping &amp; Returns below.</p></div>
+      </details>
+      <details class="faq">
+        <summary>What size am I?<span class="faq-x" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>The cut is relaxed but precise. Check the <button type="button" class="link-quiet" data-open-sizeguide>size guide</button> — and if you sit between sizes, take the smaller one. Pima softens with wear.</p></div>
+      </details>
+      <details class="faq">
+        <summary>What is the membership?<span class="faq-x" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Owning a piece makes you a member, for life. Your box arrives with a numbered Club Passport, your personal Member No. and an Edition Card. Members get priority access to every future drop before it opens to the public.</p></div>
+      </details>
+      <details class="faq">
+        <summary>What if my color sells out?<span class="faq-x" aria-hidden="true">+</span></summary>
+        <div class="faq-a"><p>Then it's gone — that's the point. You can reserve another color, or join the list to hear first when Drop 002 is announced. Numbers are never reissued.</p></div>
+      </details>
+    </div>
+
+    <p class="faq-support reveal">
+      Still unsure?
+      <a class="link-quiet wa-link" target="_blank" rel="noopener">WhatsApp us</a>
+      <span class="dot">·</span>
+      <a class="link-quiet" href="https://instagram.com/brumaclub.pe" target="_blank" rel="noopener">@brumaclub.pe</a>
+    </p>
+  </section>
+
+  <!-- ============ 9 · RESERVE / JOIN (optional list) ============ -->
+  <section id="reserve" class="light">
+    <p class="eyebrow reveal">The List</p>
+    <h2 class="title reveal">Secure your spot.</h2>
+    <div class="garua reveal"><span></span><span></span></div>
+    <p class="drop-intro reveal">Access is limited.<br />Joining the list is optional — you can always buy as a guest.</p>
+
+    <p class="demo-note demo-note-light" id="list-demo-note">Preview mode — the mailing list is not connected yet.</p>
+    <form id="join-form" class="join-form reveal" novalidate>
+      <div class="field">
+        <label for="jf-name">Name</label>
+        <input id="jf-name" name="name" type="text" autocomplete="name" required />
+      </div>
+      <div class="field">
+        <label for="jf-email">Email</label>
+        <input id="jf-email" name="email" type="email" autocomplete="email" required />
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="jf-size">Size</label>
+          <select id="jf-size" name="size">
+            <option>S</option><option selected>M</option><option>L</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="jf-color">Color of interest</label>
+          <select id="jf-color" name="color"></select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-solid btn-wide">Join the list</button>
+    </form>
+
+    <div id="join-confirm" class="join-confirm" hidden>
+      <div class="garua"><span></span><span></span></div>
+      <p class="confirm-title">You're on the list.</p>
+      <p class="confirm-sub" id="join-confirm-copy">We'll notify you when your drop opens.</p>
+    </div>
+  </section>
+
+  <!-- ============ 10 · FOOTER ============ -->
+  <footer class="dark">
+    <img class="footer-logo" src="assets/logo-bc-crema.png" alt="BC — Bruma Club" loading="lazy" />
+    <p class="footer-tagline">for those who know</p>
+    <div class="garua sm"><span></span><span></span></div>
+    <div class="footer-meta">
+      <a href="https://instagram.com/brumaclub.pe" target="_blank" rel="noopener">@brumaclub.pe</a>
+      <span class="dot">·</span>
+      <a class="wa-link" target="_blank" rel="noopener">WhatsApp</a>
+      <span class="dot">·</span>
+      <span>Lima · Peru</span>
+    </div>
+    <nav class="footer-legal" aria-label="Legal">
+      <button type="button" data-legal="privacy">Privacy Policy</button>
+      <span class="dot">·</span>
+      <button type="button" data-legal="terms">Terms</button>
+      <span class="dot">·</span>
+      <button type="button" data-legal="shipping">Shipping &amp; Returns</button>
+    </nav>
+    <p class="footer-copy">© 2026 Bruma Club. All numbers final.</p>
+  </footer>
+
+  <!-- ============ STICKY CTA (mobile only) ============ -->
+  <a id="sticky-cta" href="#drop" data-open-checkout>Reserve your piece</a>
+
+  <!-- ============ QUIET CAPTURE BANNER (exit intent / timed) ============ -->
+  <div id="capture-banner" role="dialog" aria-label="Join the list" hidden>
+    <button type="button" class="cb-close" aria-label="Dismiss">&times;</button>
+    <p class="cb-text">Join the list — be first when the drop opens.</p>
+    <form id="cb-form" novalidate>
+      <input id="cb-email" type="email" placeholder="your@email.com" aria-label="Email" required />
+      <button type="submit" class="btn btn-solid">Join</button>
+    </form>
+    <p class="cb-done" hidden>You're on the list. <em>for those who know.</em></p>
+  </div>
+
+  <!-- ============ COOKIE NOTICE ============ -->
+  <div id="cookies" hidden>
+    <p>A few quiet cookies help us understand our visitors.</p>
+    <button type="button" id="cookies-ok" class="link-quiet">Accept</button>
+  </div>
+
+  <!-- ============ SIZE GUIDE (modal) ============ -->
+  <div id="sizeguide" class="modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="sg-title">
+      <button type="button" class="checkout-close" data-close-modal aria-label="Close">&times;</button>
+      <p class="eyebrow">Drop 001 · The Crewneck</p>
+      <h3 class="ck-title" id="sg-title">Size guide.</h3>
+      <p class="ck-sub">Relaxed fit, measured flat. cm / inches.</p>
+      <table class="sg-table">
+        <thead>
+          <tr><th scope="col">Size</th><th scope="col">Chest</th><th scope="col">Length</th><th scope="col">Sleeve</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">S</th><td>53 / 20.9</td><td>68 / 26.8</td><td>60 / 23.6</td></tr>
+          <tr><th scope="row">M</th><td>56 / 22.0</td><td>70 / 27.6</td><td>62 / 24.4</td></tr>
+          <tr><th scope="row">L</th><td>59 / 23.2</td><td>72 / 28.3</td><td>64 / 25.2</td></tr>
+        </tbody>
+      </table>
+      <p class="sg-note">Chest: armpit to armpit. Length: from the collar seam down. Between sizes? Take the smaller — pima softens with wear.</p>
+    </div>
+  </div>
+
+  <!-- ============ LEGAL PAGES (modal, content in script.js → LEGAL_PAGES) ============ -->
+  <div id="legal" class="modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="legal-title">
+      <button type="button" class="checkout-close" data-close-modal aria-label="Close">&times;</button>
+      <h3 class="ck-title" id="legal-title"></h3>
+      <div id="legal-body" class="legal-body"></div>
+    </div>
+  </div>
+
+  <!-- ============ CHECKOUT (guest, modal) ============ -->
+  <div id="checkout" class="checkout" hidden>
+    <div class="checkout-backdrop" data-close-checkout></div>
+    <div class="checkout-panel" role="dialog" aria-modal="true" aria-labelledby="ck-title">
+      <button class="checkout-close" data-close-checkout aria-label="Close">&times;</button>
+
+      <!-- Step 1: selection -->
+      <div class="ck-step" id="ck-step-select">
+        <p class="eyebrow" id="ck-eyebrow">Drop 001 · Pre-sale</p>
+        <h3 id="ck-title" class="ck-title">Reserve your piece.</h3>
+        <p class="ck-sub" id="ck-sub">You're buying blind. The reveal drops July 18.</p>
+
+        <p class="ck-label">Color</p>
+        <div id="ck-colors" class="ck-colors"></div>
+
+        <p class="ck-label">Size <button type="button" class="link-quiet sg-link" data-open-sizeguide>Size guide</button></p>
+        <div class="ck-sizes" id="ck-sizes">
+          <button type="button" data-size="S">S</button>
+          <button type="button" data-size="M" class="active">M</button>
+          <button type="button" data-size="L">L</button>
+        </div>
+
+        <div class="ck-summary">
+          <span id="ck-number">—</span>
+          <span id="ck-price">—</span>
+        </div>
+        <div class="ck-currency" id="ck-currency" role="group" aria-label="Currency">
+          <button type="button" data-cur="PEN" class="active">S/ PEN</button>
+          <button type="button" data-cur="USD">$ USD</button>
+        </div>
+
+        <div class="field">
+          <label for="ck-name">Full name</label>
+          <input id="ck-name" type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="ck-email">Email</label>
+          <input id="ck-email" type="email" autocomplete="email" required />
+        </div>
+
+        <!-- Receipt — Boleta (default) or Factura (RUC + razón social) -->
+        <p class="ck-label">Receipt</p>
+        <div class="ck-receipt" id="ck-receipt" role="group" aria-label="Receipt type">
+          <button type="button" data-receipt="boleta" class="active">Boleta</button>
+          <button type="button" data-receipt="factura">Factura</button>
+        </div>
+        <div id="ck-factura" hidden>
+          <div class="field">
+            <label for="ck-ruc">RUC</label>
+            <input id="ck-ruc" type="text" inputmode="numeric" autocomplete="off" maxlength="11" />
+          </div>
+          <div class="field">
+            <label for="ck-company">Business name <span class="opt">— razón social</span></label>
+            <input id="ck-company" type="text" autocomplete="organization" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="ck-code">Invitation code <span class="opt">— optional</span></label>
+          <input id="ck-code" type="text" autocomplete="off" spellcheck="false" />
+          <p class="ck-code-msg" id="ck-code-msg" hidden></p>
+        </div>
+
+        <button id="ck-pay" class="btn btn-solid btn-wide">Proceed to payment</button>
+        <p class="ck-fine">Guest checkout — no account required.</p>
+        <p class="demo-note" id="checkout-demo-note">Preview mode: no payment, reservation or email will be processed.</p>
+        <p class="ck-fine">Ships from Lima · Peru nationwide.
+          <a class="link-quiet wa-link" target="_blank" rel="noopener">Questions? WhatsApp us</a>
+        </p>
+      </div>
+
+      <!-- Step 2: success — welcome, not a receipt -->
+      <div class="ck-step" id="ck-step-done" hidden>
+        <div class="garua"><span></span><span></span></div>
+        <h3 class="ck-title" id="ck-done-title">Welcome to the club.</h3>
+        <p class="ck-done-number" id="ck-done-number">Nº 03 / 25</p>
+        <p class="ck-sub" id="ck-done-detail">Camel · M</p>
+        <p class="ck-member" id="ck-done-member">MEMBER Nº 003 · DROP 001</p>
+        <ul class="ck-next" id="ck-next">
+          <li id="ck-next-reveal">The reveal drops July 18 — you'll see it first.</li>
+          <li>Shipping details will be confirmed with your actual order.</li>
+          <li>Your Club Passport and Edition Card arrive sealed in the box.</li>
+        </ul>
+        <p class="ck-fine" id="ck-done-note">Confirmation sent to your email.</p>
+        <button class="btn btn-ghost btn-wide" data-close-checkout>Return</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
